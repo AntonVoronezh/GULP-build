@@ -2,90 +2,28 @@ const isDevelopment = true;
 
 
 const gulp = require('gulp');
-// подключение плагина SASS 
 const sass = require('gulp-sass');
-// подключение плагина concat 
 const concat = require('gulp-concat');
-// подключение плагина sourcemaps 
 const sourcemaps = require('gulp-sourcemaps');
-// подключение плагина gulp-if  
 const gulpIf = require('gulp-if');
-// подключение плагина debug 
 const debug = require('gulp-debug');
-// подключение плагина browser-sync 
 const browserSync = require('browser-sync').create();
-
-// сам доставил
-// // подключение плагина gulp-uglify es - минификатор JavaScript
-// const uglifyEs = require('gulp-uglify-es').default;
-// подключение плагина gulp-uglify  - минификатор JavaScript
 const uglify = require('gulp-uglify');
-// подключение плагина gulp-imagemin  - минификатор IMG
 const imagemin = require('gulp-imagemin');
-// подключение плагина gulp-htmlmin  - html минификатор
 const htmlmin = require('gulp-htmlmin');
-// подключение плагина gulp-newer  - изменяет только новые
 const newer = require('gulp-newer');
-// подключение плагина gulp-plumber  - что бы не было прерывания потока
 const plumber = require('gulp-plumber');
-// подключение плагина beepbeep  - звук
 const beep = require('beepbeep');
-// подключение плагина gulp-notify  - выдавать сообщения об ошибках в CSS
 const notify = require('gulp-notify');
-// подключение плагина gulp-jshint  - выдавать сообщения об ошибках в JS
 const jshint = require('gulp-jshint');
-// подключение плагина gulp-htmlhint  - HTML валидатор
 var htmlhint = require("gulp-htmlhint");
-// подключение плагина gulp-babel
 const babel = require('gulp-babel');
-// подключение плагина gulp-autopolyfiller
 const autopolyfiller = require('gulp-autopolyfiller');
-
-
-// подключение плагина gulp-csso  (делает margin: 10 20 30 40;)
 const csso = require('gulp-csso');
-// подключение плагина gulp-clean-css  
 const cleanCss = require('gulp-clean-css');
-// подключение плагина gulp-uncss  - убирает неиспользованный CSS
 const uncss = require('gulp-uncss');
-// подключение плагина autoprefixer 
 const autoprefixer = require('gulp-autoprefixer');
-// подключение плагина media queries
 const gcmq = require('gulp-group-css-media-queries');
-
-
-//3
-// npm i --save-dev gulp-sass   
-// npm i --save-dev gulp-concat 
-// npm i --save-dev gulp-sourcemaps 
-// npm i --save-dev gulp-autoprefixer 
-
-//4
-// npm i --save-dev gulp-clean-css 
-// npm i --save-dev gulp-if 
-// npm i --save-dev gulp-debug 
-
-//6
-//npm i browser-sync --save-dev
-
-// мои
-// npm install gulp-csso --save-dev
-// npm i --save-dev gulp-uglify
-// npm i --save-dev gulp-uglify-es
-// npm i --save-dev gulp-imagemin
-// npm i --save-dev gulp-htmlmin
-// npm i --save-dev gulp-newer
-// npm i --save-dev gulp-uncss
-// npm i --save-dev gulp-plumber
-// npm i --save-dev beepbeep ????????????????????????? 
-// npm i --save-dev gulp-notify
-// npm install --save-dev jshint gulp-jshint
-// npm install --save-dev jshint-stylish 
-// npm install --save-dev gulp-htmlhint
-// npm i --save-dev htmlhint-stylish
-//  npm install --save-dev gulp-babel@7 babel-core babel-preset-env
-// npm install --save-dev gulp-autopolyfiller
-// npm install --save-dev gulp-group-css-media-queries
 
 
 
