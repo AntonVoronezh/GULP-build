@@ -19,5 +19,35 @@
     "url": "https://github.com/AntonVoronezh/GULP-build/issues"
   },
   "homepage": "https://github.com/AntonVoronezh/GULP-build#readme",
-  
+   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "beepbeep": "^1.2.2",
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-autopolyfiller": "^1.2.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-babel": "^7.0.1",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-debug": "^4.0.0",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-htmlhint": "^2.2.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-jshint": "^2.1.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.1",
+    "gulp-uglify-es": "^1.0.4",
+    "gulp-uncss": "^1.0.6",
+    "htmlhint-stylish": "^1.0.3",
+    "jshint": "^2.9.6",
+    "jshint-stylish": "^2.2.1"
+  }
 }
