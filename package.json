@@ -1,0 +1,23 @@
+{
+  "name": "gulp-build",
+  "version": "1.0.0",
+  "description": "My build for any new project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AntonVoronezh/GULP-build.git"
+  },
+  "keywords": [
+    "gulp"
+  ],
+  "author": "AntonVoronezh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AntonVoronezh/GULP-build/issues"
+  },
+  "homepage": "https://github.com/AntonVoronezh/GULP-build#readme",
+  
+}
