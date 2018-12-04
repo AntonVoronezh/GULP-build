@@ -1,0 +1,9 @@
+node_modules
+# src
+# *.log
+# *.json
+# .gitignore
+# .htmlhintrc
+# .babelrc
+# .vscode
+# gulpfile.js
