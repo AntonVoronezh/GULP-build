@@ -19,7 +19,7 @@
     "url": "https://github.com/AntonVoronezh/GULP-build/issues"
   },
   "homepage": "https://github.com/AntonVoronezh/GULP-build#readme",
-   "devDependencies": {
+  "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
     "beepbeep": "^1.2.2",
