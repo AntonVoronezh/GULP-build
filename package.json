@@ -1,61 +1,52 @@
 {
-  "name": "gulp-build",
+  "name": "educaton-html-css-16-mishka",
   "version": "1.0.0",
-  "description": "My build for any new project",
-  "main": "index.js",
+  "description": "educaton-html-css-16-mishka",
+  "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AntonVoronezh/GULP-build.git"
+    "url": "git+https://github.com/AntonVoronezh/educaton-HTML-CSS-16-mishka.git"
   },
-  "keywords": [
-    "gulp"
-  ],
   "author": "AntonVoronezh",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AntonVoronezh/GULP-build/issues"
+    "url": "https://github.com/AntonVoronezh/educaton-HTML-CSS-16-mishka/issues"
   },
-  "homepage": "https://github.com/AntonVoronezh/GULP-build#readme",
+  "homepage": "https://github.com/AntonVoronezh/educaton-HTML-CSS-16-mishka#readme",
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
-    "babel-eslint": "^8.2.6",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-stage-0": "^6.24.1",
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
     "beepbeep": "^1.2.2",
     "browser-sync": "^2.26.3",
-    "cross-env": "^5.2.0",
-    "gulp": "^3.9.1",
-    "gulp-autopolyfiller": "^1.2.1",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0",
-    "gulp-babel": "^7.0.1",
-    "gulp-clean-css": "^3.10.0",
+    "gulp-babel": "^8.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-csso": "^3.0.1",
     "gulp-debug": "^4.0.0",
+    "gulp-file-include": "^2.0.1",
+    "gulp-gh-pages": "^0.5.4",
     "gulp-group-css-media-queries": "^1.2.2",
     "gulp-htmlhint": "^2.2.1",
     "gulp-htmlmin": "^5.0.1",
-    "gulp-if": "^2.0.2",
-    "gulp-imagemin": "^4.1.0",
+    "gulp-imagemin": "^5.0.3",
     "gulp-jshint": "^2.1.0",
     "gulp-newer": "^1.4.0",
     "gulp-notify": "^3.2.0",
-    "gulp-plumber": "^1.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.4",
+    "gulp-svgmin": "^2.1.0",
+    "gulp-svgstore": "^7.0.0",
     "gulp-uglify": "^3.0.1",
     "gulp-uglify-es": "^1.0.4",
-    "gulp-uncss": "^1.0.6",
-    "eslint": "^5.4.0",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-babel": "^5.1.0",
-    "eslint-plugin-import": "^2.14.0",
     "htmlhint-stylish": "^1.0.3",
-    "jshint": "^2.9.6",
+    "jshint": "^2.9.7",
     "jshint-stylish": "^2.2.1"
   }
 }
