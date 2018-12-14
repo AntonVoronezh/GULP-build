@@ -75,7 +75,22 @@ gulp.task('watch:fileinclude', function () {
 });
 
 // подключение плагина SASS
-
+gulp.task('scss', function () {
+    return gulp.src([PATHIN + '/scss/main.scss'])
+        .pipe(plumber({ errorHandler: onError }))
+        .pipe(sourcemaps.init())
+        .pipe(debug({ title: 'sourcemaps' }))
+        .pipe(sass())
+        .pipe(debug({ title: 'sass' }))
+        .pipe(concat('bundle.css'))
+        .pipe(debug({ title: 'concat' }))
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest(PATHOUT + '/css'))
+        .pipe(rename({ suffix: '.min' }))
+        .pipe(gulp.dest(PATHOUT + '/css'))
+        .pipe(notify('SCSS OK!'))
+        .pipe(browserSync.stream())
+});
 
 
 
