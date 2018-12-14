@@ -205,7 +205,16 @@ gulp.task('html:build', function (fn) {
 
 // ********************************
 
-
+gulp.task('css:build', function () {
+    return gulp.src([PATHOUT + '/css/bundle.min.css'])
+        .pipe(plumber({ errorHandler: onError }))
+        .pipe(gcmq())
+        .pipe(debug({ title: 'group metaqueries' }))
+        .pipe(autoprefixer({ browsers: ['last 3 versions'] }))
+        .pipe(debug({ title: 'IMG - plumber' }))
+        .pipe(csso())
+        .pipe(gulp.dest('build/css'))
+});
 
 // ********************************
 
