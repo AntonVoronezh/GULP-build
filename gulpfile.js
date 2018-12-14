@@ -135,6 +135,10 @@ gulp.task('img', function () {
 
 });
 
+gulp.task('watch:img', function () {
+    gulp.watch(PATHIN + '/img/**/*.{png,jpg,svg,gif}', gulp.series('img'))
+});
+
 
 // ********************************
 
