@@ -180,6 +180,10 @@ gulp.task('default', gulp.series(gulp.parallel(
 // @
 
 
+gulp.task('del:build', function (fn) {
+    del(['build']);
+    fn();
+});
 
 
 
