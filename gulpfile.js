@@ -186,6 +186,22 @@ gulp.task('del:build', function (fn) {
 });
 
 
+gulp.task('html:build', function (fn) {
+    return gulp.src([PATHOUT + '/*.html'])
+        .pipe(plumber({ errorHandler: onError }))
+        .pipe(htmlmin(
+            {
+                removeComments: true,
+                collapseWhitespace: true,
+                preserveLineBreaks: true,
+                removeEmptyElements: true,
+                removeEmptyAttributes: true,
+                removeRedundantAttributes: true
+            }
+        ))
+        .pipe(debug({ title: 'htmlmin' }))
+        .pipe(gulp.dest('build'))
+});
 
 // ********************************
 
