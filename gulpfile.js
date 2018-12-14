@@ -119,6 +119,9 @@ gulp.task('js', function () {
 
 });
 
+gulp.task('watch:js', function () {
+    gulp.watch(PATHIN + '/js/moduls/*.js', gulp.series('js'))
+});
 
 // *********************************** 
 

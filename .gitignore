@@ -2,9 +2,9 @@ node_modules
 dist
 build
 *.log
-*.json
-.gitignore
-.htmlhintrc
-.jshintrc
+# *.json
+# .gitignore
+# .htmlhintrc
+# .jshintrc
 # gulpfile.js
 # git config --global core.autocrlf false
