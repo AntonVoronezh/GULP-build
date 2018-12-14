@@ -272,6 +272,13 @@ gulp.task('build', gulp.series(
 );
 
 
+gulp.task('deploy', function () {
+    return gulp.src("./build/**/*")
+      .pipe(deploy({ 
+        remoteUrl: "https://github.com/AntonVoronezh/educaton-HTML-CSS-16-mishka",
+        branch: "master"
+      }))
+  });
 
 
 //  https://frontender.info/task_automation_with_npm_run/ - про package.json
