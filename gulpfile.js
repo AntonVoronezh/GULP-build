@@ -154,6 +154,9 @@ gulp.task('svg', () => {
         .pipe(notify('SVG OK!'));
 });
 
+gulp.task('watch:svg', function () {
+    gulp.watch(PATHIN + '/img/svg/*.svg', gulp.series('svg'))
+});
 
 // ********************************
 
