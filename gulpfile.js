@@ -124,6 +124,16 @@ gulp.task('watch:js', function () {
 });
 
 // *********************************** 
+gulp.task('img', function () {
+    return gulp.src([PATHIN + '/img/**/*.{png,jpg,svg,gif}', '!' + PATHIN + '/img/svg/*.svg'])
+        .pipe(plumber({ errorHandler: onError }))
+        .pipe(debug({ title: 'IMG - plumber' }))
+        .pipe(newer(PATHOUT + '/img'))
+        .pipe(gulp.dest(PATHOUT + '/img'))
+        .pipe(notify('IMG OK!'))
+        .pipe(browserSync.stream());
+
+});
 
 
 // ********************************
