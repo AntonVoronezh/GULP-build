@@ -6,5 +6,5 @@ build
 .gitignore
 .htmlhintrc
 .jshintrc
-gulpfile.js
+# gulpfile.js
 # git config --global core.autocrlf false
