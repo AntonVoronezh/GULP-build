@@ -160,7 +160,13 @@ gulp.task('watch:svg', function () {
 
 // ********************************
 
-
+gulp.task('serve', function () {
+    browserSync.init({
+        server: {
+            baseDir: './' + PATHOUT
+        }
+    });
+});
 
 // ********************************
 
