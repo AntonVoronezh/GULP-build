@@ -93,7 +93,9 @@ gulp.task('scss', function () {
 });
 
 
-
+gulp.task('watch:scss', function () {
+    gulp.watch(PATHIN + '/scss/**/*.scss', gulp.series('scss'))
+});
 
 // *********************************** 
 
