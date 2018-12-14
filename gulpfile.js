@@ -142,7 +142,17 @@ gulp.task('watch:img', function () {
 
 // ********************************
 
-
+gulp.task('svg', () => {
+    return gulp.src(PATHIN + '/img/svg/*.svg')
+        .pipe(plumber({ errorHandler: onError }))
+        .pipe(svgmin())
+        .pipe(debug({ title: 'svgmin' }))
+        .pipe(svgstore({ inlineSvg: true }))
+        .pipe(rename('sprite.svg'))
+        .pipe(debug({ title: 'svgstore' }))
+        .pipe(gulp.dest(PATHIN + '/img/icons'))
+        .pipe(notify('SVG OK!'));
+});
 
 
 // ********************************
