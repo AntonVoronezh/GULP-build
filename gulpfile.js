@@ -98,7 +98,26 @@ gulp.task('watch:scss', function () {
 });
 
 // *********************************** 
+gulp.task('js', function () {
+    return gulp.src([PATHIN + '/js/moduls/*.js'])
+        .pipe(plumber({ errorHandler: onError }))
+        .pipe(debug({ title: 'JS - plumber' }))
+        .pipe(sourcemaps.init())
+        .pipe(jshint('.jshintrc'))
+        .pipe(jshint.reporter("jshint-stylish"))
+        .pipe(debug({ title: 'JS - jshinty' }))
+        .pipe(concat('bundle.js'))
+        .pipe(debug({ title: 'JS - concat' }))
 
+
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest(PATHOUT + '/js'))
+        .pipe(rename({ suffix: '.min' }))
+        .pipe(gulp.dest(PATHOUT + '/js'))
+        .pipe(notify('JS OK!'))
+        .pipe(browserSync.stream());
+
+});
 
 
 // *********************************** 
