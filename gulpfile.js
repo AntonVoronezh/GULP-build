@@ -254,7 +254,14 @@ gulp.task('fonts:build', function () {
 // *********************************** 
 
 
-
+gulp.task('serve:build', function (fn) {
+    browserSync.init({
+        server: {
+            baseDir: './build'
+        }
+    });
+    fn();
+});
 
 // ********************************
 
