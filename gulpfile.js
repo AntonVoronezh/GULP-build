@@ -218,7 +218,16 @@ gulp.task('css:build', function () {
 
 // ********************************
 
+gulp.task('js:build', function () {
+    return gulp.src([PATHOUT + '/js/bundle.min.js'])
+        .pipe(plumber({ errorHandler: onError }))
+        .pipe(babel({
+            presets: ['@babel/env']
+        }))
+        .pipe(uglify())
 
+        .pipe(gulp.dest('build/js'))
+});
 
 // ********************************
 
