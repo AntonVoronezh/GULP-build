@@ -231,7 +231,16 @@ gulp.task('js:build', function () {
 
 // ********************************
 
-
+gulp.task('img:build', function () {
+    return gulp.src([PATHOUT + '/img/**/*.{png,jpg,svg,gif}', '!' + PATHOUT + '/img/icons/sprite.svg'])
+        .pipe(plumber({ errorHandler: onError }))
+        .pipe(debug({ title: 'IMG - plumber' }))
+        .pipe(imagemin([
+            imagemin.optipng({ optimizationLevel: 3 }),
+            imagemin.jpegtran({ progressive: true })
+        ]))
+        .pipe(gulp.dest('build/img'))
+});
 
 // *********************************** 
 
