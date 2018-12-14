@@ -244,7 +244,12 @@ gulp.task('img:build', function () {
 
 // *********************************** 
 
-
+gulp.task('fonts:build', function () {
+    return gulp.src([PATHIN + '/scss/fonts/*'])
+        .pipe(plumber({ errorHandler: onError }))
+        .pipe(debug({ title: 'copy - plumber' }))
+        .pipe(gulp.dest('build/css/fonts'))
+});
 
 // *********************************** 
 
