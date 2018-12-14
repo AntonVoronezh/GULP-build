@@ -265,6 +265,12 @@ gulp.task('serve:build', function (fn) {
 
 // ********************************
 
+gulp.task('build', gulp.series(
+    gulp.parallel(
+        'del:build', 'html:build', 'css:build', 'js:build', 'img:build', 'fonts:build'
+    ), 'serve:build')
+);
+
 
 
 
