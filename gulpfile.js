@@ -70,6 +70,9 @@ gulp.task('fileinclude', function () {
     // fn();
 });
 
+gulp.task('watch:fileinclude', function () {
+    gulp.watch([PATHIN + '/index.html', PATHIN + '/html/**/*.html'], gulp.series('fileinclude'));
+});
 
 // подключение плагина SASS
 
