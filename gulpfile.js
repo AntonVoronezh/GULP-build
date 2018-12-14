@@ -171,6 +171,9 @@ gulp.task('serve', function () {
 // ********************************
 
 
+gulp.task('default', gulp.series(gulp.parallel(
+    'watch:scss', 'watch:fileinclude', 'watch:js', 'watch:img', 'watch:svg', 'serve'
+)));
 
 // @
 // @++++++++++++++++++++++++++++++ BUILD +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
